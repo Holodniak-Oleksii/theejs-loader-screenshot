@@ -1,5 +1,7 @@
+import ObjectScreenShot from "./common/ObjectScreenShot/ObjectScreenShot";
+
 function App() {
-  return <div></div>;
+  return <ObjectScreenShot />;
 }
 
 export default App;
