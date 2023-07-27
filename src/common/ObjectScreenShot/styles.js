@@ -9,8 +9,12 @@ export const OBJContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #318cfe;
-
+  border: 1px solid #393939;
+  background: radial-gradient(
+    circle,
+    rgba(30, 30, 30, 1) 50%,
+    rgba(25, 25, 25, 1) 100%
+  );
   @media screen and (max-width: 1024px) {
     width: 100%;
   }
@@ -24,7 +28,7 @@ export const Choose = styled.div`
   flex-direction: column;
   gap: 8px;
   h5 {
-    color: #318cfe;
+    color: #7e7e7e;
     font-size: 20px;
     line-height: 30px;
     font-weight: 600;
@@ -37,7 +41,7 @@ export const Choose = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -76,25 +80,11 @@ export const Upload = styled.label`
   padding: 8px 20px;
   border-radius: 100px;
   cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    rgba(164, 55, 219, 1) 0%,
-    rgba(32, 129, 226, 1) 100%
-  );
+  background: linear-gradient(90deg, #f24c3d 0%, rgba(32, 129, 226, 1) 100%);
   color: #fff;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  @media screen and (min-width: 1024px) {
-    transition: all 0.4s ease-in;
-    &:hover {
-      background: linear-gradient(
-        90deg,
-        rgba(178, 93, 221, 1) 0%,
-        rgba(62, 146, 231, 1) 100%
-      );
-    }
-  }
 `;
 
 export const Loader = styled.div`
@@ -112,28 +102,14 @@ export const Button = styled.button`
   gap: 4px;
   padding: 8px 20px;
   border-radius: 100px;
-  background: linear-gradient(
-    90deg,
-    rgba(164, 55, 219, 1) 0%,
-    rgba(32, 129, 226, 1) 100%
-  );
+  background: linear-gradient(90deg, #f24c3d 0%, rgba(32, 129, 226, 1) 100%);
   color: #fff;
 
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   &:disabled {
-    opacity: 0.7;
-  }
-  @media screen and (min-width: 1024px) {
-    transition: all 0.4s ease-in;
-    &:hover {
-      background: linear-gradient(
-        90deg,
-        rgba(178, 93, 221, 1) 0%,
-        rgba(62, 146, 231, 1) 100%
-      );
-    }
+    opacity: 0.4;
   }
 `;
 

@@ -11,7 +11,7 @@ export const Progress = styled.span`
   left: 50%;
   z-index: 7;
   transform: translate(-50%, -50%);
-  color: #ffffff;
+  color: #fff;
   font-size: 10px;
 `;
 
@@ -21,7 +21,7 @@ export const Spinner = styled.div`
   display: grid;
   border: 4.5px solid #0000;
   border-radius: 50%;
-  border-color: #dbdcef #0000;
+  border-color: #676767 #0000;
   animation: spinner-animation 1s infinite linear;
 
   &::before,
@@ -34,7 +34,7 @@ export const Spinner = styled.div`
   }
 
   &::before {
-    border-color: #474bff #0000;
+    border-color: #f24c3d #0000;
     animation: inherit;
     animation-duration: 0.5s;
     animation-direction: reverse;

@@ -55,10 +55,7 @@ const ObjectScreenShot = () => {
             <Scene url={file.url} image={image} setImage={setImage} />
           ) : (
             <Choose>
-              <h5>Choose file</h5>
-              <div>
-                <Button>.glb</Button>
-              </div>
+              <h5>Choose file in .glb format</h5>
             </Choose>
           )}
         </OBJContainer>

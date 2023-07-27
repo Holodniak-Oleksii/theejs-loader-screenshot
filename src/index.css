@@ -41,9 +41,7 @@ body {
   -webkit-text-size-adjust: 100%;
   font-style: normal;
   font-weight: 400;
-  &.ReactModal__Body--open {
-    overflow: hidden !important;
-  }
+  background-color: #191919;
 }
 
 input,
