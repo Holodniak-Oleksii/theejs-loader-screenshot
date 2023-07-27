@@ -14,8 +14,8 @@ const Scene = (props) => {
       shadows
     >
       <OrbitControls makeDefault position={new Vector3(0, 0, 100)} />
-      <ambientLight intensity={1.3} />
-      <directionalLight intensity={0.4} castShadow />
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[1, 1, 0]} intensity={1} />
       <Suspense fallback={<SpinLoader />}>
         <Bounds fit clip damping={6} margin={1.2}>
           <Center center>
